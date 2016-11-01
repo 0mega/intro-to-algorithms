@@ -26,4 +26,11 @@ public class TestDeque {
     deque.addFirst("testing");
     assertFalse(deque.isEmpty());
   }
+
+  @Test
+  public void itShouldBeEmptyAfterAddingAndRemovingOneItem() {
+    deque.addFirst("testing");
+    assertFalse(deque.isEmpty());
+    deque.removeFirst();
+  }
 }

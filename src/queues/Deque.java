@@ -51,4 +51,10 @@ public class Deque<Item> implements Iterable<Item> {
       value = v;
     }
   }
+
+  public Item removeFirst() {
+    Item toReturn = first.value;
+    first = first.next;
+    return toReturn;
+  }
 }
